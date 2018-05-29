@@ -1,0 +1,10 @@
+<?php
+ini_set("display_errors", "1");
+error_reporting(E_ALL);
+include ('connection.php');
+    $connection = new createConnection();
+    $connection->connectToDatabase(); 
+    $connection->selectDatabase();
+              
+                $logid=$_POST['username'];
+				$pswd=$_POST["password"];
